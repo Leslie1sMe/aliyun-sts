@@ -1,0 +1,25 @@
+{
+    "name": "leslie/aliyun-sts",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lizhonglin",
+            "email": "lizhonglin_melody@yeah.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {"php":">=5.6"},
+    "autoload": {
+        "psr-4": {
+            "Leslie\\AliyunSts\\": "src/",
+            "Leslie\\Sts\\Request\\V20150401\\": "Sts/Request/V20150401",
+            "Leslie\\Sts\\Core\\Auth\\": "Sts/aliyun-php-sdk-core/Auth",
+            "Leslie\\Sts\\Core\\Exception\\": "Sts/aliyun-php-sdk-core/Exception",
+            "Leslie\\Sts\\Core\\Profile\\": "Sts/aliyun-php-sdk-core/Profile",
+            "Leslie\\Sts\\Core\\Request\\": "Sts/aliyun-php-sdk-core/Request",
+            "Leslie\\Sts\\Core\\Regions\\": "Sts/aliyun-php-sdk-core/Regions",
+            "Leslie\\Sts\\Core\\Autoloader\\": "Sts/aliyun-php-sdk-core/Autoloader",
+            "Leslie\\Sts\\Core\\": "Sts/aliyun-php-sdk-core/"
+        }
+    }
+}
