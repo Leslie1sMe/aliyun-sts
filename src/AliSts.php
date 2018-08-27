@@ -46,10 +46,10 @@ class AliSts
         if ($response->getStatus() == 200) {
             $rows['status_code'] = 200;
             $rows['msg'] = '成功';
-            $rows['AccessKeyId'] = $content->Credentials->AccessKeyId;
-            $rows['AccessKeySecret'] = $content->Credentials->AccessKeySecret;
-            $rows['Expiration'] = $content->Credentials->Expiration;
-            $rows['SecurityToken'] = $content->Credentials->SecurityToken;
+            $rows['data']['AccessKeyId'] = $content->Credentials->AccessKeyId;
+            $rows['data']['AccessKeySecret'] = $content->Credentials->AccessKeySecret;
+            $rows['data']['Expiration'] = $content->Credentials->Expiration;
+            $rows['data']['SecurityToken'] = $content->Credentials->SecurityToken;
         } else {
             $rows['status_code'] = 400;
             $rows['msg'] = '失败';
