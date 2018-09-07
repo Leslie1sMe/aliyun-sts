@@ -1,5 +1,6 @@
 {
     "name": "leslie/aliyun-sts",
+    "description": "luosimao发送短信composer包",
     "license": "MIT",
     "authors": [
         {
