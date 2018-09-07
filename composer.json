@@ -1,6 +1,6 @@
 {
     "name": "leslie/aliyun-sts",
-    "description": "luosimao发送短信composer包",
+    "description": "使用STS授予用户临时权限操作OSS",
     "license": "MIT",
     "authors": [
         {
