@@ -34,6 +34,7 @@ class AliSts
 
     public function assumeRole($durationSeconds, $policy, $roleArn, $roleSessionName)
     {
+        header("Content-Type:text/html;charset=utf-8");
         $request = new AssumeRoleRequest();
         $request->setDurationSeconds($durationSeconds);
         $request->setPolicy($policy);
