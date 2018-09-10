@@ -57,7 +57,6 @@ class AliSts
             $rows['ErrorCode'] = $content->Code;
             $rows['ErrorMessage'] = $content->Message;
         }
-        echo json_encode($rows);
-        return;
+        return $rows;
     }
 }
