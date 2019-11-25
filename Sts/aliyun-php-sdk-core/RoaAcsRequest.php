@@ -81,8 +81,7 @@ abstract class RoaAcsRequest extends AcsRequest
 	
 	private function prepareHeader($iSigner)
 	{
-		date_default_timezone_set("GMT");
-		$this->headers["Date"] = date($this->dateTimeFormat);
+        $this->headers["Date"] = (new \DateTime("now", new \DateTimeZone('GMT')))->format($this->dateTimeFormat);
 		if(null == $this->acceptFormat)
 		{
 			$this->acceptFormat = "RAW";
